@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useState, useEffect } from "react";
-import { Card, ListItem, Button, Icon } from "react-native-elements";
+import { Card } from "react-native-elements";
 
 import {
   View,

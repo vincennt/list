@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, ListItem, Button, Icon } from "react-native-elements";
+import { Card } from "react-native-elements";
 import {
   View,
   Text,
@@ -15,7 +15,7 @@ import {
 import { useState, useEffect } from "react";
 import LanguageModals from "./LanguageModals";
 
-export default function List(props) {
+export default function List() {
   const [coutries, setCountries] = useState(null);
   const [isModalVisible, setisModalVisible] = useState(false);
 
@@ -44,7 +44,7 @@ export default function List(props) {
           <Text>Revenir a la liste des pays</Text>{" "}
         </TouchableOpacity>
 
-        <LanguageModals />
+        <LanguageModals coutries={coutries} />
       </Modal>
 
       <Card containerStyle={{ padding: 0 }}>
